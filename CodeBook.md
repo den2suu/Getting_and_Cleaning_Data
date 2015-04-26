@@ -1,6 +1,8 @@
 ***
 CodeBook
 ***
+This CodeBook.md shows description of variabels, data analysing process, and final data
+
 ## Description of variables
 The final data consist of four variables which are subjects, activities, features and average_value.
 
@@ -108,15 +110,14 @@ Calculating average of each features variable for each subject and each activity
 run_analysis.R perfoms analysis in orders below.
 1. loading packages of dplyr, tidyr and sqldf.
 2. uploading file to R
-- activity_label
-- features.txt
-- subject_test.txt
-- X_test.txt
-- y_test.txt
-- subject_train.txt
-- X_train.txt
-- y_train.txt
-
+  - activity_label
+  - features.txt
+  - subject_test.txt
+  - X_test.txt
+  - y_test.txt
+  - subject_train.txt
+  - X_train.txt
+  - y_train.txt
 3. row bind X_test and X_train
 4. name columns of dataset with removing (), -, and redundancy such as BodyBody.
 5. extract means and stds column called rawdata
@@ -128,3 +129,16 @@ run_analysis.R perfoms analysis in orders below.
 11. summarize data and calculate average_value
 12. output result file
 
+## The final data
+14220 * 4
+```str(result)```
+> str(result)
+Classes ‘grouped_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	14220 obs. of  4 variables:
+ $ subjects     : int  1 1 1 1 1 1 1 1 1 1 ...
+ $ activities   : chr  "laying" "laying" "laying" "laying" ...
+ $ features     : Factor w/ 79 levels "tBodyAcc.mean.X",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ average_value: num  0.2216 -0.0405 -0.1132 -0.9281 -0.8368 ...
+ - attr(*, "vars")=List of 2
+  ..$ : symbol subjects
+  ..$ : symbol activities
+ - attr(*, "drop")= logi TRUE
