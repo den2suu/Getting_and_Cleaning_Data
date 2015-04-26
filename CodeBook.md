@@ -108,6 +108,7 @@ Calculating average of each features variable for each subject and each activity
 
 ## Data analysing process
 run_analysis.R perfoms analysis in orders below.
+
 1. loading packages of dplyr, tidyr and sqldf.
 2. uploading file to R
   - activity_label
@@ -118,6 +119,7 @@ run_analysis.R perfoms analysis in orders below.
   - subject_train.txt
   - X_train.txt
   - y_train.txt
+
 3. row bind X_test and X_train
 4. name columns of dataset with removing (), -, and redundancy such as BodyBody.
 5. extract means and stds column called rawdata
