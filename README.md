@@ -12,5 +12,5 @@ This is a course project of getting and cleaning data, which tidy up human activ
 
 ### How to do the analysis with run_analysis.R
 1. Firstly, obtain and unzip data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-2. Unzipped dataset ought to be in your working directory.
-3. Run run_analysis.R on Rstudio.
+2. Unzipped dataset and run_analysis.R ought to be in your working directory.
+3. Run run_analysis.R by source\("run_analysis.R"\)
